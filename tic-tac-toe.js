@@ -13,5 +13,11 @@ document.addEventListener("DOMContentLoaded", function (){
 
             currentPlayer = currentPlayer === "X" ? "O" : "X";
         })
+        square.addEventListener("mouseover", function(){
+            square.classList.add("hover");
+        })
+        square.addEventListener("mouseout", function(){
+            square.classList.remove("hover");
+        })
     })
 })
